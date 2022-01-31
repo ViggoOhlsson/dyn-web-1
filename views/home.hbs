@@ -1,0 +1,20 @@
+<main class="home">
+    <div class="main-content">
+        <div class="task-grid" id="task-grid">
+            {{#each tasks}}
+            <div class="task">
+                <div class="head">
+                    <span class="title">{{title}}</span>
+                    <span class="date">{{time}}</span>
+                </div>
+                <div class="body">{{body}}</div>
+                <div class="control">
+                    <a class="fa fa-check complete" href="/complete/{{id}}"></a>
+                    <a class="fa fa-pencil edit" href="/edit/{{id}}"></a>
+                    <a class="fa fa-trash remove" href="/remove/{{id}}"></a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</main>

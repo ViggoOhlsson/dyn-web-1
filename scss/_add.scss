@@ -1,0 +1,40 @@
+.add {
+    display: flex;
+    justify-content: center;
+    .main-content {
+        margin: 20px 0 0;
+        width: 512px;
+        display: flex;
+        justify-content: center;
+    }
+    .add-form {
+        display: flex;
+
+        width: 100%;
+        gap: 5px;
+        flex-direction: column;
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            font-family: monospace;
+            resize: none;
+            grid-column: 2/7;
+            background-color: rgb(15, 15, 15);
+            border: none;
+            padding: 5px;
+            flex-grow: 1;
+            color:white;
+        }
+        .submit {
+            margin: 5px 0 0;
+            align-self: flex-start;
+            padding: 10px;
+            background-color: $good-color;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            color: rgb(27,27,27);
+            border-radius: 5px;
+        }
+    }
+}

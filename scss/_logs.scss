@@ -1,0 +1,22 @@
+.logs {
+    display: flex;
+    justify-content: center;
+    .main-container {
+        width: 1024px;
+        .log-wrapper {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: black;
+        }
+        .log {
+            font-size: 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span {
+                
+            font-family: monospace;
+            }
+        }
+    }
+}

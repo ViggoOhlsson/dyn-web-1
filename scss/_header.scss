@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    .header-content {
+        background-color: rgb(46, 46, 46);
+        width: 100%;
+        display: flex;
+        border-radius: 0;
+        overflow: hidden;
+        .site-title {
+            align-self: center;
+            margin: 0 0 0 10px;
+            font-weight: bold;
+            flex-grow: 1;
+            color: white;
+            text-decoration: none;
+        }
+        .add, .logs {
+            display: flex;
+            gap: 5px;
+            text-decoration: none;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            background: none;
+            color: white;
+            border:none;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 0 15px;
+            transition: color 0.1s, background-color 0.1s;
+            &:hover {
+                background-color: $good-color;
+                color: rgb(27, 27, 27);
+                cursor: pointer;
+                
+            }
+        }
+        .add {
+            &:hover{
+                background-color: $good-color;
+            }
+        }
+        .logs {
+            &:hover{
+                background-color: $neutral-color;
+            }
+        }
+
+        @include desktop {
+            width: 1024px;
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}
